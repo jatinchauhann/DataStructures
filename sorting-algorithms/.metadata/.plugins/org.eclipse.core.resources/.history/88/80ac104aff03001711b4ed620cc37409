@@ -5,9 +5,8 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);//Scanner object to take input from the user
-		
-		//Entering the number of elements by the user
+		Scanner in = new Scanner(System.in);
+
 		System.out.println("Enter the number of elements");
 		int n = in.nextInt();
 		int[] arr = new int[n+1];
@@ -15,18 +14,17 @@ public class Main {
 		for (int i = 1; i <= n; i++)
 			arr[i] = in.nextInt();
 		System.out.println("Entered elements:");
-		display(arr, n); //calling the display function
-		insertionSort(arr, n); //calling the insertion-sort function
+		display(arr, n);
+		insertionSort(arr, n);
 		System.out.println("\nElements after sorting");
 		display(arr, n);
 	}
 
 	public static void insertionSort(int[] arr, int n) {
 		for (int j = 2; j <= n; j++) {
-			int key = arr[j]; //temporarily storing the target element since it can be relocated further 
+			int key = arr[j];
 			int i = j - 1;
 			while (i > 0 && arr[i] > key) {
-				//running a loop, to find the correct position of the element 
 				arr[i + 1] = arr[i];
 				i = i - 1;
 			}

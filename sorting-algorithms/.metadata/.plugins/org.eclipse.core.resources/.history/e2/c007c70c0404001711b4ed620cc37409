@@ -26,7 +26,7 @@ public class Main {
 			int key = arr[j]; //temporarily storing the target element since it can be relocated further 
 			int i = j - 1;
 			while (i > 0 && arr[i] > key) {
-				//running a loop, to find the correct position of the element 
+				//running a loop to find the 
 				arr[i + 1] = arr[i];
 				i = i - 1;
 			}
