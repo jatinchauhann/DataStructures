@@ -1,7 +1,7 @@
 # DataStructures
 Data Structures and Algorithms from around the World
 
-#INDEX
+## INDEX
 
-#Sorting Algorithms
+# Sorting Algorithms
 1.Insertion Sort
